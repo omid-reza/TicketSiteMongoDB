@@ -3,7 +3,8 @@
     "description": "Second Workout for Database Systems Implementation course in zanjan university",
     "keywords": ["nosql", "mongodb", "mongodb-database"],
     "require": {
-        "php": "^7.1.3"
+        "php": "^7.1.3",
+        "mongodb/mongodb": "^1.5"
     },
     "type": "project",
     "license": "MIT",
