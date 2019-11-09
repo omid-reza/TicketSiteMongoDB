@@ -16,6 +16,11 @@
             "role": "Developer"
         }
     ],
+    "autoload": {
+        "psr-4": {
+            "Mongo\\": "mongo/"
+        }
+    },
     "config": {
         "sort-packages": true,
         "optimize-autoloader": true
