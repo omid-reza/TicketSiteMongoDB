@@ -34,6 +34,10 @@ use Helper\Counter;
 			<img src="../images/add.svg">
 			Company
 		</a>
+		<a type="button" class="btn btn-primary logout-btn" href="bus/insert.php">
+			<img src="../images/add.svg">
+			Bus
+		</a>
 	<?php else: ?>
 		<a type="button" class="btn btn-dark login-btn" href="auth/login.php">Log in</a>
 		<a type="button" class="btn btn-warning signup-btn" href="auth/signUp.php">Sign Up</a>
