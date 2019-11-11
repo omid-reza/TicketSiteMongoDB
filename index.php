@@ -46,8 +46,8 @@ use Helper\Counter;
 		    [
 		    	'limit'=>100
 		    ]
-		);
-		if ($travelsCol->count()==0): ?>
+		)->toArray();
+		if (count($recentTravels)==0): ?>
 		<div class="empty-title">
 			<h2>N</h2>
 			<div class="empty-little-title">
