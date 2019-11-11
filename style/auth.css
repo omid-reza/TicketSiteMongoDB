@@ -1,0 +1,17 @@
+body{
+	background-image: linear-gradient(to left, #e5e5e5 , #c5c3c6);
+}
+.form{
+	width: 80%;
+	margin-top: 15%;
+	margin-left: 10%;
+}
+.login-btn,.SignUp-btn{
+	width: 100%;
+	margin-top: 10px;
+}
+.alert{
+	width: 80%;
+	margin-left: 10%;
+	margin-top: 20px;
+}

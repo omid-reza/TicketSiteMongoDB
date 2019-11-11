@@ -1,0 +1,22 @@
+body{
+	background-image: linear-gradient(to left, #e5e5e5 , #c5c3c6);
+}
+.travel-info{
+	display: flex;
+	justify-content: space-between;
+}
+.card{
+	margin-left: 12%;
+}
+.big-title{
+	margin-left: 0.3%;
+}
+.empty-title{
+	padding-left: 49%;
+	padding-top: 19%;
+	width: 100%;
+	display: flex;
+}
+.empty-little-title{
+	margin-top: 0.9%;
+}

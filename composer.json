@@ -18,7 +18,8 @@
     ],
     "autoload": {
         "psr-4": {
-            "Mongo\\": "mongo/"
+            "Mongo\\": "mongo/",
+            "Helper\\": "helpers/"
         }
     },
     "config": {

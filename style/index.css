@@ -1,0 +1,45 @@
+body{
+	background-image: linear-gradient(to left, #e5e5e5 , #c5c3c6);
+}
+.login-btn, .profile-btn{
+	float: right;
+	margin-top: 10px;
+	margin-right: 15px;
+}
+.signup-btn, .logout-btn{
+	float: right;
+	margin-top: 10px;
+	margin-right: 15px;	
+}
+.alert{
+	width: 80%;
+	margin-left: 10%;
+	margin-top: 20px;
+}
+.title{
+	margin-left: 10%;
+	margin-top: 5%;
+	display: flex;
+}
+.little-title{
+	margin-top: 0.6%;
+}
+.big-title{
+	margin-left: 0.3%;
+}
+.empty-title{
+	padding-left: 49%;
+	padding-top: 19%;
+	width: 100%;
+	display: flex;	
+}
+.empty-little-title{
+	margin-top: 0.8%;
+}
+.card{
+	margin-left: 12%;
+}
+.travel-info{
+	display: flex;
+	justify-content: space-between;
+}

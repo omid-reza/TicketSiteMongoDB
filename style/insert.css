@@ -1,0 +1,28 @@
+body{
+	background-image: linear-gradient(to left, #e5e5e5 , #c5c3c6);
+}
+.form{
+	width: 80%;
+	margin-top: 3%;
+	margin-left: 10%;
+}
+.create-btn{
+	width: 100%;
+	margin-top: 10px;
+}
+.alert{
+	width: 80%;
+	margin-left: 10%;
+	margin-top: 20px;
+}
+.title{
+	margin-left: 10%;
+	margin-top: 5%;
+	display: flex;
+}
+.little-title{
+	margin-top: 0.6%;
+}
+.big-title{
+	margin-left: 0.3%;
+}
