@@ -99,6 +99,11 @@ use Helper\Counter;
 			    	<img src="images/money.svg">
 			    	<?= $travel['price'].' Tooman' ?>
 			    </data>
+			    <data class="card-text date">
+			    	<a type="button" class="btn btn-dark profile-btn" href="ticket/insert.php">
+			    		Buy Ticket
+			    	</a>
+			    </data>
 		    </div>
 		  </div>
 		</div>
