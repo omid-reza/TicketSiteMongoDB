@@ -66,6 +66,8 @@
 	    <label for="capacity">capacity</label>
 	    <input required name="capacity" type="text" class="form-control" id="capacity" placeholder="capacity">
 	  </div>
+	  <br>
+	  <div class="form-group">
 		<select required class="browser-default custom-select custom-select-lg mb-3" name="company_id">
 			<option selected value="">Select company</option>
 			<?php
@@ -77,6 +79,18 @@
 					<option value="<?= $company_data['id'] ?>"><?= $company_data['name'] ?></option>
 				<?php endforeach ?>
 		</select>
+	</div>
+	<div class="form-group">
+		<select required class="browser-default custom-select custom-select-lg mb-3" name="bus_id">
+			<option selected value="">Select Bus(Plaque)</option>
+			<?php
+			  	$buses=MongoDB::connect("buses");
+			  	$buses=$buses->find([])->toArray();
+			  	foreach ($buses as $bus): ?>
+					<option value="<?= $bus['id'] ?>"><?= $bus['Plaque'] ?></option>
+				<?php endforeach ?>
+		</select>
+	</div>
 	  <button type="submit" class="btn btn-warning create-btn">Create</button>
 	</form>
 	<br>
