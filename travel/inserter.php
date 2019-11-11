@@ -17,16 +17,17 @@ if (
 	header('location:insert.php');
 }
 $travels=MongoDB::connect("travels");
-
+$companies=MongoDB::connect("companies");
+$company=$companies->findOne(['id'=>$_POST['company_id']]);
 $travels->insertOne([
 	"to"=>$_POST["to"],
 	"from"=>$_POST["from"],
 	"date"=>$_POST["date"],
 	"time"=>$_POST["time-hour"].':'.$_POST["time-minute"],
 	"price"=>$_POST["price"],
-	"capacity"=>$_POST["capacity"]
+	"capacity"=>$_POST["capacity"],
+	"company"=>$company
 ]);
-
 Message::set('travel created');
 header("location:../index.php");
 ?>
