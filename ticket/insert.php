@@ -32,31 +32,40 @@
 	<form class="form" action="inserter.php" method="POST">
 		<input type="hidden" name="id" value="<?php echo $travel['id'];?>">
 	  <div class="form-group">
-	    From : <?php echo $travel['from']; ?>
+	    <strong>From : </strong>
+	    <data><?php echo $travel['from']; ?></data>
 	  </div>
 	  <div class="form-group">
-	    To : <?php echo $travel['to']; ?>
+	    <strong>To :</strong>
+	    <data><?php echo $travel['to']; ?></data>
 	  </div>
 	  <div class="form-group">
-	    Date : <?php echo $travel['date']; ?>
+	    <strong>Date :</strong>
+	    <data><?php echo $travel['date']; ?></data>
 	  </div>
 	  <div class="form-group">
-	    Time : <?php echo $travel['time']; ?>
+	    <strong>Time :</strong>
+	    <data><?php echo $travel['time']; ?></data>
 	  </div>
 	  <div class="form-group">
-	    price : <?php echo $travel['price']; ?>
+	    <strong>price :</strong>
+	    <data><?php echo $travel['price']; ?></data>
 	  </div>
 	  <div class="form-group">
-	    All Capacity : <?php echo $travel['capacity']['all']; ?>
+	    <strong>All Capacity :</strong>
+	    <data><?php echo $travel['capacity']['all']; ?></data>
 	  </div>
 	  <div class="form-group">
-	    Free capacity : <?php echo $travel['capacity']['free']; ?>
+	    <strong>Free capacity :</strong>
+	    <data><?php echo $travel['capacity']['free']; ?></data>
 	  </div>
 	  <div class="form-group">
-		Company  Name: <?php echo $travel['company']['name']; ?>
+		<strong>Company  Name:</strong>
+		<data><?php echo $travel['company']['name']; ?></data>
 	</div>
 	<div class="form-group">
-		Bus Plaque: <?php echo $travel['bus']['Plaque']; ?>
+		<strong>Bus Plaque:</strong>
+		<data><?php echo $travel['bus']['Plaque']; ?></data>
 	</div>
 	  <button type="submit" class="btn btn-warning create-btn" >Buy Ticket</button>
 	</form>
