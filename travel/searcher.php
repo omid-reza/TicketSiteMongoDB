@@ -64,7 +64,7 @@ $response=$travels->find([
 			    <?php if (Session::isset('username')): ?>
 				    <data class="card-text date">
 				    	<?php if ($travel['capacity']['free']>0): ?>
-						    <a type="button" class="btn btn-dark profile-btn" href="../ticket/insert.php">
+						    <a type="button" class="btn btn-dark profile-btn" href="../ticket/insert.php?id=<?php echo $travel['id']?>">
 						    	Buy Ticket
 						    </a>
 				    	<?php else: ?>
