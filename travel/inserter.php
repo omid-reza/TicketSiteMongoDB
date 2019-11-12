@@ -29,9 +29,9 @@ $travels->insertOne([
 	"company"=>$company,
 	"from"=>$_POST["from"],
 	"date"=>$_POST["date"],
-	"price"=>$_POST["price"],
+	"price"=>intval($_POST["price"]),
 	"time"=>$_POST["time-hour"].':'.$_POST["time-minute"],
-	"capacity"=>["all"=>$_POST["capacity"], "free"=>$_POST["capacity"]],
+	"capacity"=>["all"=>intval($_POST["capacity"]), "free"=>intval($_POST["capacity"])],
 	"customers"=>[]
 ]);
 Message::set('travel created');
