@@ -99,11 +99,19 @@ use Helper\Counter;
 			    	<img src="images/money.svg">
 			    	<?= $travel['price'].' Tooman' ?>
 			    </data>
-			    <data class="card-text date">
-			    	<a type="button" class="btn btn-dark profile-btn" href="ticket/insert.php">
-			    		Buy Ticket
-			    	</a>
-			    </data>
+			    <?php if (Session::isset('username')): ?>
+				    <data class="card-text date">
+				    	<?php if ($travel['capacity']['free']>0): ?>
+				    		<a type="button" class="btn btn-dark profile-btn" href="ticket/insert.php?id=<?php echo $travel['id']?>">
+					    		Buy Ticket
+					    	</a>
+				    	<?php else: ?>
+							<a class="btn btn-warning profile-btn">
+					    		Sold Out
+					    	</a>
+				    	<?php endif ?>
+				    </data>
+			    <?php endif ?>
 		    </div>
 		  </div>
 		</div>

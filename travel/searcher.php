@@ -8,6 +8,7 @@ if (
 }
 require '../vendor/autoload.php';
 use Mongo\MongoDB;
+use Helper\Session;
 $travels=MongoDB::connect("travels");
 $response=$travels->find([
 	'from'=> $_POST['from'],
@@ -60,6 +61,13 @@ $response=$travels->find([
 			    	<img src="../images/money.svg">
 			    	<?= $travel['price'].' Tooman' ?>
 			    </data>
+			    <?php if (Session::isset('username')): ?>
+				    <data class="card-text date">
+					    <a type="button" class="btn btn-dark profile-btn" href="../ticket/insert.php">
+					    	Buy Ticket
+					    </a>
+				    </data>
+			    <?php endif ?>
 		    </div>
 		  </div>
 		</div>

@@ -23,14 +23,16 @@ $companies=MongoDB::connect("companies");
 $bus=$buses->findOne(['id'=>$_POST['bus']]);
 $company=$companies->findOne(['id'=>$_POST['company_id']]);
 $travels->insertOne([
+	"id"=>time(),
 	"bus"=>$bus,
 	"to"=>$_POST["to"],
 	"company"=>$company,
 	"from"=>$_POST["from"],
 	"date"=>$_POST["date"],
 	"price"=>$_POST["price"],
-	"capacity"=>$_POST["capacity"],
-	"time"=>$_POST["time-hour"].':'.$_POST["time-minute"]
+	"time"=>$_POST["time-hour"].':'.$_POST["time-minute"],
+	"capacity"=>["all"=>$_POST["capacity"], "free"=>$_POST["capacity"]],
+	"customers"=>[]
 ]);
 Message::set('travel created');
 header("location:../index.php");
